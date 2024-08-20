@@ -3,10 +3,10 @@ import glob
 import os
 
 # Tentukan folder yang berisi file Excel (gunakan raw string untuk path)
-folder_path = r'd:/Downloads/#TEMPORARY FILES/BAPK BP3IP/blanko cop januari 2023 - agustus 2024/all/*.xlsx'
+folder_path = r'd:/Downloads/#TEMPORARY FILES/BAPK BP3IP/email dr Isman/all daftar/*.xlsx'
 
 # Buat writer untuk menulis file Excel baru
-output_file = 'file_gabungan_all.xlsx'
+output_file = 'file_gabungan_all_daftar.xlsx'
 with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
     # Loop untuk setiap file Excel
     for file in glob.glob(folder_path):
