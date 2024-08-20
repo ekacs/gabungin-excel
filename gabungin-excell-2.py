@@ -3,10 +3,10 @@ import glob
 import os
 
 # Tentukan folder yang berisi file Excel
-folder_path = r'd:/Downloads/#TEMPORARY FILES\ADTT BP3IP/email dr Isman/Able 2023 - 2024/Able Engine 2023 - 2024/*.xlsx'
+folder_path = r'd:/target-folder/*.xlsx'
 
 # Buat writer untuk menulis file Excel baru
-output_file = 'file_gabungan_able_engine.xlsx'
+output_file = 'file_gabungan_target.xlsx'
 
 try:
     with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
